@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon server.js",
+    "heroku-postbuild": "npm --prefix client install && npm --prefix client run build-prod"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.901.8",
     "@angular/cli": "^9.1.8",

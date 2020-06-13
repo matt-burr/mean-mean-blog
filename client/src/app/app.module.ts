@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './post/post.component';
 import { AdminComponent } from './admin/admin.component';
+import { LoginFormComponent } from './loginForm/loginForm.component';
 
 const routes: Routes = [
   {
@@ -22,10 +23,20 @@ const routes: Routes = [
     path: 'admin',
     component: AdminComponent,
   },
+  {
+    path: 'login',
+    component: LoginFormComponent,
+  },
 ];
 
 @NgModule({
-  declarations: [AppComponent, PostsComponent, PostComponent, AdminComponent],
+  declarations: [
+    AppComponent,
+    PostsComponent,
+    PostComponent,
+    AdminComponent,
+    LoginFormComponent,
+  ],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent],

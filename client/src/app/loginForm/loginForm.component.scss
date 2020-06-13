@@ -1,0 +1,12 @@
+form {
+  max-width: 600px;
+  div {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+
+    input {
+      width: 200px;
+    }
+  }
+}

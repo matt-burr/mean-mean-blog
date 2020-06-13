@@ -1,11 +1,16 @@
 form {
-  display: flex;
-  flex-direction: column;
-  input {
-    min-width: 200px;
-  }
-  button {
-    width: 100px;
-    padding: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+  div {
+    justify-content: space-between;
+    display: flex;
+    padding: 8px;
+    input {
+      min-width: 300px;
+    }
+    textarea {
+      min-width: 400px;
+      height: 200px;
+    }
   }
 }
