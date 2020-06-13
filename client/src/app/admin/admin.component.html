@@ -1,1 +1,38 @@
-<p>admin works!</p>
+<div class="container">
+  <h1>Add post</h1>
+  <form>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title" required [(ngModel)]="title" />
+    </div>
+    <div class="form-group">
+      <label for="shortContent">Short content</label>
+      <input
+        type="text"
+        name="shortContent"
+        id="title"
+        required
+        [(ngModel)]="shortContent"
+      />
+    </div>
+    <div class="form-group">
+      <label for="longContent">Long content</label>
+      <textarea
+        type="text"
+        name="longContent"
+        id="title"
+        required
+        [(ngModel)]="longContent"
+      ></textarea>
+    </div>
+  </form>
+  <button (click)="this.addPost()" type="submit">Submit</button>
+</div>
+
+<div *ngIf="this.title">
+  <h1>Post to be added:</h1>
+  <hr />
+  <h2>{{ this.title }}</h2>
+  <p>{{ this.shortContent }}</p>
+  <p>{{ this.longContent }}</p>
+</div>

@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-style: "Arial";
+  background: #f0db4f;
+  height: 40px;
+}
+
+li {
+  list-style: none;
+  padding: 8px;
+}
+
+main {
+  padding: 50px 100px;
+}

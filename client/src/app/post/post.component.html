@@ -1,4 +1,4 @@
-<p>Selected post {{ postId }}</p>
+<h1>Details post</h1>
 <div *ngIf="postId !== null">{{ this.getPost().title }}</div>
 <p *ngIf="postId !== null">{{ this.getPost().shortContent }}</p>
 <p *ngIf="postId !== null">{{ this.getPost().longContent }}</p>

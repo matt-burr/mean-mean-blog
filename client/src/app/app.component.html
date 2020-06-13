@@ -1,4 +1,11 @@
 <h1>MEAN BLOG</h1>
-<router-outlet></router-outlet>
-<app-posts></app-posts>
-<app-post></app-post>
+<header class="header">
+  <nav>
+    <li><a href="/">Home</a></li>
+    <li><a href="/post/1">Details post</a></li>
+    <li><a href="/admin">Add post</a></li>
+  </nav>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
